@@ -1,30 +1,14 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class='navbar navbar-expand-lg navbar-light bg-light'>
+    <div class="d-flex justify-content-center col-12">    
+      <router-link class="navbar-brand text-primary" to="/">Home</router-link> 
+    <router-link class="navbar-brand text-primary"  to="/about">About</router-link>
+    <router-link class="navbar-brand text-primary"  to="/login">Se connecter</router-link>
+    </div>
   </nav>
   <router-view/>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style >
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
